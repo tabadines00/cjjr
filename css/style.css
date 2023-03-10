@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #ffffff;
+  --secondary-color: #ca4820;
+  --line-height: 1.7rem;
+  --transition: 0.1s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+  background: url(../img/cedricbg.jpg) no-repeat center 89% fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  color: var(--primary-color);
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+ body {
+  font-family: "Arial", sans-serf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: var(--secondary-color);
+} 
+
+/* Nav Bar */
+
+nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 6px 9px #2424242a;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.nav-item {
+    margin-left: 2rem;
+}
+
+/* Call to action button */
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.clear {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid var(--secondary-color);
+  margin-right: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.clear:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* Landing Page */
+
+.hero {
+  margin: 7rem 4rem;
+  
+}
+
+.section {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.082);
+  max-width: 55vw;
+  overflow: scroll;
+}
+
+h1 span {
+  padding-bottom: 5rem;
+}
+
+/* Contact */
+
+#iglogo {
+  width: 1rem;
+}
+
+#mail {
+  width: 1rem;
+}
+
+/* Desktop Overrides */
+
+@media only screen and (min-width: 992px) {
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    max-width: 1100px;
+    margin: 5rem 12rem -6rem;
+  }
+
+  .intro-text {
+    display: flex;
+  }
+  
+  .section {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    /* background: url(../img/cedricbg.jpg) no-repeat 60% 89% fixed; */
+  }
+}
